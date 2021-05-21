@@ -1,4 +1,5 @@
 
+
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -101,12 +102,14 @@ function mouseReleased(){
 }
 
 //create keyPressed function here
-function keyPressed(){
-  if (keyCode===32){
-    Matter.Body.setPosition(stoneObj.body,{x:235,y:420});
-    launcherObject.attach(stoneObj.body);
-  }
+
+  function keyPressed(){
+    if (keyCode===32){
+      Matter.Body.setPosition(stoneObj.body,{x:235,y:420});
+      launcherObject.attach(stoneObj.body);
+    }
 }
+
 
   function detectollision(lstone,lmango){
 
